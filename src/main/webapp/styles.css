@@ -1,0 +1,253 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(221, 221, 221);
+}
+
+/* 
+    HEADER 
+*/
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+header .top{
+    background-color: rgb(173, 173, 173);
+    text-align: right;
+    height: 1.5rem;
+    margin-bottom: 1rem;
+}
+header .logo{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+header .top span{
+    background-color: #fff;
+    padding: 0.5rem;
+}
+header nav{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    padding: 1rem;
+    background-color:black;
+    text-decoration: none;
+    color: #fff;
+}
+header nav ul li a:hover{
+    color: #000;
+    background-color:#fff;
+    transition: 0.2s ease-in-out;
+    border-bottom: 1px solid red;
+}
+
+/* 
+    MAIN 
+*/
+
+main{
+
+}
+main .banner{
+    background-image: url("./assets/images/banner-bg.jpg");
+    height: 30rem;
+    padding: 1.5rem;
+
+}
+main .banner .formalaire{
+    height: 17rem;
+    background-color: #32151A;
+    width: 20rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+main .banner .formalaire h3{
+    text-align: center;
+    font-size: 2rem;
+}
+main .banner .formalaire form{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+main .banner .formalaire form div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+main .banner .formalaire form button{
+    margin-top: 2rem;
+    height: 2rem;
+}
+
+main .articles{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #32151A;
+}
+main .articles .top{
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+main .articles .middle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3rem;
+    justify-content: center;
+    
+}
+main .articles .middle{
+    text-decoration: none;
+    color: black;
+}
+main .articles .middle .item{
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    background-color: white;
+    padding: 0.8rem;
+    height: 15rem;
+    font-weight: bold;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 0.3rem;
+    margin: 1rem;
+    opacity: 0.8;
+}
+main .articles .middle .item:hover{
+    height: 16rem;
+    width: 15rem;
+    margin: 0;
+    background-color:#32151A;
+    color: #fff;
+    transition: 0.3s ease;
+}
+main .articles .middle .item img{
+    margin-bottom: 1rem;
+    max-height: 20rem;
+    opacity: 1;
+    background-color: #000;
+
+}
+footer{
+    height: 10rem;
+    background-color:#32151A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+footer form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* product */
+main .productDetail{
+    display: flex;
+    flex-direction: row;
+    margin: 4rem;
+}
+main .productDetail .image{
+    margin-right: 1rem;
+    width: 40rem;
+}
+main .productDetail .detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid rgb(168, 168, 168);
+    padding: 1rem;
+}
+main .productDetail .detail a{
+    height: 3rem;
+    width: 8rem;
+    color: #fff;
+    background-color:#32151A;
+    text-align: center;
+    padding-top: 1.3rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+main .productDetail .detail a:hover{
+    color: #32151A;
+    background-color: white;
+}
+
+/* contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact .contactTop{
+    display: flex;
+    flex-direction: column;
+}
+.contact .contactTop form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 30rem;
+    font-size: 1.5rem;
+    justify-content: center;
+
+
+}
+.contact .contactTop form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.contact .contactTop form button{
+    height: 3rem;
+    width: 8rem;
+    color: #fff;
+    background-color:#32151A;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.contact .contactTop form button:hover{
+    color: #32151A;
+    background-color: #fff;
+}
+main .about{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+main .about p{
+    text-align: justify;
+}
